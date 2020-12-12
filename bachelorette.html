@@ -17,6 +17,7 @@
             body {
                 font-family: 'Georgia',sans-serif;
                 margin: 0;
+                max-width: 100%;
             }
 
             img {
@@ -68,16 +69,6 @@
                 border-bottom: 2px solid red;
             }
 
-            .clareImg {
-                display: none;
-            }
-
-            .tayshiaImg {
-                width: 50%;
-                max-width: 100%;
-                float: left;
-            }
-
             table {
                 font-family: 'Yanone Kaffeesatz', sans-serif;
                 border-collapse: collapse;
@@ -87,8 +78,8 @@
             }
 
             td {
-                padding: 10px;
-                position: relative;
+                /* padding: 10px; */
+                /* position: relative; */
             }
 
             tr {
@@ -98,10 +89,6 @@
             thead {
                 font-size: 1px;
                 color: white;
-                text-transform: uppercase;
-                font-weight: bold;
-                letter-spacing: .5px;
-                text-align: center;
             }
 
             tbody td:nth-child(2) {
@@ -127,7 +114,7 @@
             td img {
                 display: block;
                 width: 80%;
-                min-width: 165px;
+                /* min-width: 150px; */
                 max-width: 200px;
                 margin: 0 auto;
                 border-radius: 50%;
@@ -191,6 +178,7 @@
 
             .currentCast {
                 margin-top: 100px;
+                width: 100%;
             }
 
             @media (max-width: 824px) {
@@ -220,16 +208,45 @@
                 font-size: 30px;
                 right: 30px;
                 }
+
+                td img {
+                    /* min-width: 165px; */
+                }
             }
 
-            @media (max-width: 555px) {
+            @media (min-width: 441px) {
+                td img {
+                    min-width: 150px;
+                }
+            }
+
+            @media (max-width: 440px) {
+                table {
+                    width: 100%;
+                }
+
                 .rank {
+                    height: 45px;
+                    width: 45px;
+                    line-height: 45px;
+                    font-size: 30px;
                     left: 10px;
+                }
+
+                td img {
+                    border-radius: 10px;
+                }
+
+                td p {
+                    font-size: 18px;
+                    padding: 2px 5px;
+                    bottom: 10px;
                 }
 
                 tr > td:last-child {
                     position: relative;
                     right: 25px;
+                    font-size: 18px;
                 }
             }
         </style>
