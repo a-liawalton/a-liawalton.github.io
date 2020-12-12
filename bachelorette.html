@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bachelorette 2020 Cast Rankings</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;700&display=swap" rel="stylesheet"> 
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Georgia',sans-serif;
+                margin: 0;
+            }
+
+            img {
+                display: block;
+            }
+
+            header {
+                position: relative;
+                padding: 20px;
+                background-image: url("images/tayshia-adams.png"),linear-gradient(red, darkred);
+                background-repeat: no-repeat;
+                background-position: top 10% left -10%;
+                width: 100%;
+                color: rgb(228, 228, 228);
+            }
+
+            header > * {
+                width: 50%;
+                /* margin: 0 auto; */
+                margin-left: 50%;
+                max-width: 565px;
+            }
+
+            /* header h1 {
+                position: absolute;
+                font-size: 5em;
+                transform: rotate(45deg);
+            } */
+
+            .showHistory, .thisSeason {
+                background-color: rgba(255, 255, 255, 0.801);
+                border: 1px solid white;
+                padding: 10px;
+                margin-bottom: 15px;
+                margin-top: 15px;
+                color: initial;
+                font-size: 13px;
+                line-height: 18px;
+            }
+
+            /* Typography */
+            h1 {
+                font-family: 'Amita', cursive;
+                font-size: 45px;
+                letter-spacing: 2px;
+                /* line-height: 60px; */
+                text-shadow: 0 0 5px khaki;
+                margin-bottom: -20px;
+            }
+
+            h2, h3, h4, h5, h6 {
+                text-transform: uppercase;
+            }
+
+            em {
+                font-weight: bold;
+                border-bottom: 2px solid red;
+            }
+
+            /* .leadImages {
+                float: left;
+            } */
+
+            .clareImg {
+                display: none;
+            }
+
+            .tayshiaImg {
+                width: 50%;
+                max-width: 100%;
+                float: left;
+            }
+
+            table {
+                font-family: 'Yanone Kaffeesatz', sans-serif;
+                border-collapse: collapse;
+                width: 70%;
+                margin: 30px auto;
+                max-width: 780px;
+            }
+
+            td {
+                /* border: 1px solid black; */
+                padding: 10px;
+                position: relative;
+            }
+
+            tr {
+                border-bottom: 1px solid rgb(212, 212, 212);
+            }
+
+            thead {
+                font-size: 1px;
+                color: white;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: .5px;
+                text-align: center;
+            }
+
+            tbody td:nth-child(2) {
+                text-align: center;
+            }
+
+            .rank {
+                height: 50px;
+                width: 50px;
+                line-height: 50px;
+                font-size: 30px;
+                /* background-color: red; */
+                background: radial-gradient(red 15%, darkred);
+                border: 2px inset black;
+                border-radius: 50%;
+                color: white;
+                position: relative;
+                top: px;
+                right: 30px;
+                /* box-shadow: -1px 1px 1px darkred; */
+                text-align: center;
+                font-family: 'Yanone Kaffeesatz', sans-serif;
+                font-weight: bold;
+            }
+
+            td img {
+                display: block;
+                width: 80%;
+                max-width: 200px;
+                margin: 0 auto;
+                border-radius: 50%;
+                border: 1px solid black;
+            }
+
+            tbody > :nth-of-type(odd) {
+                background-color: rgba(253, 191, 191, 0.493);
+            }
+
+            tbody td:last-child {
+                font-size: 20px;
+            }
+
+            td p {
+                background-color: darkred;
+                color: white;
+                display: inline-block;
+                position: relative;
+                padding: 5px 8px;
+                bottom: 30px;
+                font-size: 20px;
+                margin: 0;
+            }
+
+            li {
+                text-transform: capitalize;
+                margin-bottom: 5px;
+            }
+
+            .desc {
+                font-weight: bold;
+                letter-spacing: .5px;
+                text-transform: lowercase;
+                padding-right: 3px;
+                color: darkred;
+            }
+
+            ul {
+                padding-left: 0;
+                list-style-type: none;
+            }
+
+            caption {
+                margin-bottom: 20px;
+                font-size: 18px;
+                margin-top: -20px;
+                color: rgb(199, 199, 199);
+                font-style: italic;
+            }
+
+            .tayshia {
+                position: relative;
+                top: 50px;
+                background-color: darkred;
+                border: 5px solid white;
+                padding: 10px;
+                background-clip: padding-box;
+                box-shadow: -1px 1px 7px grey;
+            }
+
+            .currentCast {
+                margin-top: 100px;
+            }
+
+            @media (max-width: 824px) {
+                header {
+                    background: linear-gradient(red, darkred);
+                }
+
+                header > * {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+
+                h1 {
+                    line-height: 50px;
+                    text-align: center;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+
+                .season {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <!-- <div class="leadImages">
+                <img src="images/tayshia-adams.png" class="tayshiaImg" alt="Tayshia Adams, current season 19 Bachelorette lead">
+                <img src="" class="clareImg" alt="Clare Crawley, former season 19 Bachelorette lead">
+            </div> -->
+            <h1>The Bachelorette, <span class="season">Season 19</span></h1>
+            <section class="showHistory">
+                <h2>Show History</h2>
+                <p>The Bachelorette is a romantic reality TV show that has aired on ABC for the past 19 years. In it, the female lead (or bachelorette) meets 30+ single men that ultimately compete for her affections. On the last few episodes of the series, the lead chooses the man she wants to marry, and he must propose to her to show his commitment to a long-term future with her. Hosted by Chris Harrison, every season of The Bachelorette promises more dramatic scenes than the last.</p>
+            </section>
+            <section class="thisSeason">
+                <h2>This Season</h2>
+                <p>This season marked two unpredecented moments in the show's history:
+                <em>Firstly,</em> it gave us the the oldest bachelorette to be cast - Clare Crawley - a reasonable 38&nbsp;years&nbsp;old. <em>Secondly,</em> it gave us the first bachelorette to be quickly replaced by another lead,&nbsp;because the first lead went all in on a male cast member very early on in the season.
+                </p>
+            </section>
+            <section class="tayshia">
+                <h2>Tayshia Adams</h2>
+                <p>The show's current lead is Tayshia Adams.</p>
+            </section>
+        </header>
+        <section class="currentCast">
+            <h2 style="text-align: center; font-family: 'Yanone Kaffeesatz', sans-serif; font-size: 40px;">Current Cast Rankings</h2>
+            <table>
+                <caption>A ranked list of the remaining male cast members of the Bachelorette, Season 19 in order of how much chemistry Tayshia has with them.</caption>
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>Name</td>
+                        <td>Bio</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><div class="rank">
+                            1
+                        </div></td>
+                        <td>
+                            <figure>
+                                <img src="images/ben-smith.jpg" alt="Portrait of Ben Smith">
+                            </figure>
+                            <p>Ben Smith</p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><span class="desc">Age</span> 29</li>
+                                <li><span class="desc">Hometown</span><br> Venice, CA</li>
+                                <li><span class="desc">Occupation</span><br> Army veteran</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div class="rank">
+                            2
+                        </div></td>
+                        <td>
+                            <figure>
+                                <img src="images/zac-clark.jpg" alt="Portrait of Zac Clark">
+                            </figure>
+                            <p>Zac Clark</p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><span class="desc">Age</span> 36</li>
+                                <li><span class="desc">Hometown</span><br> Haddonfield, NJ</li>
+                                <li><span class="desc">Occupation</span><br> Addiction specialist</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div class="rank">
+                            3
+                        </div></td>
+                        <td>
+                            <figure>
+                                <img src="images/brendan-morais.jpg" alt="Portrait of Brendan Morais">
+                            </figure>
+                            <p>Brendan Morais</p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><span class="desc">Age</span> 30</li>
+                                <li><span class="desc">Hometown</span><br> Milford, MA</li>
+                                <li><span class="desc">Occupation</span><br> Commercial roofer</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div class="rank">
+                            4
+                        </div></td>
+                        <td>
+                            <figure>
+                                <img src="images/ivan-hall.jpg" alt="Portrait of Ivan Hall">
+                            </figure>
+                            <p>Ivan Hall</p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><span class="desc">Age</span> 28</li>
+                                <li><span class="desc">Hometown</span><br> Dallas, TX</li>
+                                <li><span class="desc">Occupation</span><br> Aeronautical engineer</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div class="rank">
+                            5
+                        </div></td>
+                        <td>
+                            <figure>
+                                <img src="images/riley-christian.jpg" alt="Portrait of Riley Christian">
+                            </figure>
+                            <p>Riley Christian</p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><span class="desc">Age</span> 30</li>
+                                <li><span class="desc">Hometown</span><br> Long Island City, NY</li>
+                                <li><span class="desc">Occupation</span><br> Attorney</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div class="rank">
+                            6
+                        </div></td>
+                        <td>
+                            <figure>
+                                <img src="images/noah-erb.jpg" alt="Portrait of Noah Erb">
+                            </figure>
+                            <p>Noah Erb</p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><span class="desc">Age</span> 25</li>
+                                <li><span class="desc">Hometown</span><br> Tulsa, OK</li>
+                                <li><span class="desc">Occupation</span><br> Registered travel nurse</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div class="rank">
+                            7
+                        </div></td>
+                        <td>
+                            <figure>
+                                <img src="images/blake-moynes.jpg" alt="Portrait of Blake Moynes">
+                            </figure>
+                            <p>Blake Moynes</p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><span class="desc">Age</span> 29</li>
+                                <li><span class="desc">Hometown</span><br> Hamilton, Ontario, Canada</li>
+                                <li><span class="desc">Occupation</span><br> Wildlife manager</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <main>
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
