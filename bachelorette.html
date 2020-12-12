@@ -53,10 +53,10 @@
             /* Typography */
             h1 {
                 font-family: 'Amita', cursive;
-                font-size: 45px;
+                font-size: 40px;
                 letter-spacing: 2px;
+                line-height: 45px;
                 text-shadow: 0 0 5px khaki;
-                margin-bottom: -20px;
             }
 
             h2, h3, h4, h5, h6 {
@@ -109,16 +109,16 @@
             }
 
             .rank {
-                height: 50px;
-                width: 50px;
-                line-height: 50px;
-                font-size: 30px;
+                height: 80px;
+                width: 80px;
+                line-height: 80px;
+                font-size: 40px;
                 background: radial-gradient(red 15%, darkred);
                 border: 2px inset black;
                 border-radius: 50%;
                 color: white;
                 position: relative;
-                right: 30px;
+                right: 50px;
                 text-align: center;
                 font-family: 'Yanone Kaffeesatz', sans-serif;
                 font-weight: bold;
@@ -127,6 +127,7 @@
             td img {
                 display: block;
                 width: 80%;
+                min-width: 165px;
                 max-width: 200px;
                 margin: 0 auto;
                 border-radius: 50%;
@@ -206,18 +207,36 @@
                     line-height: 50px;
                     text-align: center;
                     margin-top: 30px;
-                    margin-bottom: 30px;
                 }
 
                 .season {
                     display: block;
+                }
+
+                .rank {
+                height: 60px;
+                width: 60px;
+                line-height: 60px;
+                font-size: 30px;
+                right: 30px;
+                }
+            }
+
+            @media (max-width: 555px) {
+                .rank {
+                    left: 10px;
+                }
+
+                tr > td:last-child {
+                    position: relative;
+                    right: 25px;
                 }
             }
         </style>
     </head>
     <body>
         <header>
-            <h1>The Bachelorette, <span class="season">Season 19</span></h1>
+            <h1>The Bachelorette, <span class="season">Season&nbsp;19</span></h1>
             <section class="showHistory">
                 <h2>Show History</h2>
                 <p>The Bachelorette is a romantic reality TV show that has aired on ABC for the past 19 years. In it, the female lead (or bachelorette) meets 30+ single men that ultimately compete for her affections. On the last few episodes of the series, the lead chooses the man she wants to marry, and he must propose to her to show his commitment to a long-term future with her. Hosted by Chris Harrison, every season of The Bachelorette promises more dramatic scenes than the last.</p>
@@ -253,7 +272,7 @@
                             <figure>
                                 <img src="images/ben-smith.jpg" alt="Portrait of Ben Smith">
                             </figure>
-                            <p>Ben Smith</p>
+                            <p>Ben <span>Smith</span></p>
                         </td>
                         <td>
                             <ul>
@@ -271,7 +290,7 @@
                             <figure>
                                 <img src="images/zac-clark.jpg" alt="Portrait of Zac Clark">
                             </figure>
-                            <p>Zac Clark</p>
+                            <p>Zac <span>Clark</span></p>
                         </td>
                         <td>
                             <ul>
@@ -289,7 +308,7 @@
                             <figure>
                                 <img src="images/brendan-morais.jpg" alt="Portrait of Brendan Morais">
                             </figure>
-                            <p>Brendan Morais</p>
+                            <p>Brendan <span>Morais</span></p>
                         </td>
                         <td>
                             <ul>
@@ -307,7 +326,7 @@
                             <figure>
                                 <img src="images/ivan-hall.jpg" alt="Portrait of Ivan Hall">
                             </figure>
-                            <p>Ivan Hall</p>
+                            <p>Ivan <span>Hall</span></p>
                         </td>
                         <td>
                             <ul>
@@ -325,7 +344,7 @@
                             <figure>
                                 <img src="images/riley-christian.jpg" alt="Portrait of Riley Christian">
                             </figure>
-                            <p>Riley Christian</p>
+                            <p>Riley <span>Christian</span></p>
                         </td>
                         <td>
                             <ul>
@@ -343,7 +362,7 @@
                             <figure>
                                 <img src="images/noah-erb.jpg" alt="Portrait of Noah Erb">
                             </figure>
-                            <p>Noah Erb</p>
+                            <p>Noah <span>Erb</span></p>
                         </td>
                         <td>
                             <ul>
@@ -361,7 +380,7 @@
                             <figure>
                                 <img src="images/blake-moynes.jpg" alt="Portrait of Blake Moynes">
                             </figure>
-                            <p>Blake Moynes</p>
+                            <p>Blake <span>Moynes</span></p>
                         </td>
                         <td>
                             <ul>
